@@ -1,5 +1,5 @@
 pipeline {
-    agent "${params.AGENT_TYPE}"
+    agent SecondFlask
     stages {
         stage('Git get') {
             steps{
