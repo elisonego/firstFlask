@@ -1,5 +1,5 @@
 pipeline {
-    agent SecondFlask
+    agent { label 'SecondFlask' }
     stages {
         stage('Git get') {
             steps{
