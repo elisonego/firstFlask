@@ -1,7 +1,10 @@
 
 
 pipeline {
-    agent { label 'SecondFlask' }
+        agent {
+        node {
+            label params.NODE_NAME
+        }
     stages {
         stage('Git get') {
             steps{
