@@ -1,10 +1,16 @@
-
-
 pipeline {
-        agent {
+    parameters {
+        choice(
+            name: 'NODE_NAME',
+            choices: ['thirdFlask', 'Secondflask'],
+            description: 'Choose a node'
+        )
+    }
+    agent {
         node {
             label params.NODE_NAME
         }
+    }
     stages {
         stage('Git get') {
             steps{
