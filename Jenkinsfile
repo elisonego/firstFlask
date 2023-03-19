@@ -2,7 +2,7 @@ pipeline {
     parameters {
         choice(
             name: 'NODE_NAME',
-            choices: ['thirdFlask', 'Secondflask'],
+            choices: ['thirdflask', 'Secondflask'],
             description: 'Choose a node'
         )
     }
