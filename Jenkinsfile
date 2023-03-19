@@ -1,11 +1,5 @@
 pipeline {
-    parameters {
-        choice(
-            name: 'NODE_NAME',
-            choices: ['thirdflask', 'Secondflask'],
-            description: 'Choose a node'
-        )
-    }
+    parameters {    }
     agent {
         node {
             label params.NODE_NAME
