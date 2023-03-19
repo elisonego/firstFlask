@@ -61,13 +61,13 @@ pipeline {
                 }
             }
         }
-        stage ('remove the container') {
-            steps{
-                sh 'docker stop myapp'
-                sh 'docker rm myapp'
-                sh 'docker image rm flaskapp'
-                echo "Docker removal completed"
-            }
-        }
+//         stage ('remove the container') {
+//             steps{
+//                 sh 'docker stop myapp'
+//                 sh 'docker rm myapp'
+//                 sh 'docker image rm flaskapp'
+//                 echo "Docker removal completed"
+//             }
+//         }
     }
 }
