@@ -1,5 +1,5 @@
 pipeline {
-    agent $NODE_NAME
+    agent { label $NODE_AGENT }
     stages {
         stage('Git get') {
             steps{
